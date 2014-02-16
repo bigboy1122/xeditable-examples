@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuery UI Calendar using XEditable</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+</head>
+<body>
+
+<p><a href="#" id="dob" data-type="combodate" data-pk="1" data-url="/post" data-value="1984-05-15" data-title="Select date">1984-05-15  </a></p>
+
+</body>
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+<script>
+    $(function(){
+        $('#dob').editable({
+            format: 'YYYY-MM-DD',
+            viewformat: 'DD.MM.YYYY',
+            template: 'D / MMMM / YYYY',
+            combodate: {
+                minYear: 2000,
+                maxYear: 2015,
+                minuteStep: 1
+            }
+        });
+    });
+</script>
+</html>
