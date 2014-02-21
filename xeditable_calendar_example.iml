@@ -4,6 +4,10 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jquery-1.10.2" level="application" />
+    <orderEntry type="library" name="bootstrap-editable" level="application" />
+    <orderEntry type="library" name="moment" level="application" />
+    <orderEntry type="library" name="bootstrap-datepicker" level="application" />
   </component>
 </module>
 
